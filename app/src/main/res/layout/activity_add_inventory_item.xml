@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddInventoryItem">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editItemName"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:autofillHints="Enter Item name"
+            android:ems="10"
+            android:hint="@string/enter_item_name"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            android:text="@string/enter_item_name"
+            android:textIsSelectable="true" />
+
+        <EditText
+            android:id="@+id/editItemQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:autofillHints="Enter item quantity"
+            android:ems="10"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:text="@string/enter_item_qty"
+            android:textIsSelectable="true"
+            android:tooltipText="Enter Quantity" />
+
+        <Button
+            android:id="@+id/buttonUpdateItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_item" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
